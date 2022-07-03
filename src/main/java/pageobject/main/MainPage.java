@@ -35,6 +35,7 @@ public class MainPage extends CommonHeader {
         }
         return this;
     }
+
     @Step("Click on the sauce to open sauce's Section")
     public MainPage clickSauce(){
         sauce.click();
@@ -45,6 +46,7 @@ public class MainPage extends CommonHeader {
         }
         return this;
     }
+
     @Step("Click on the fillings to open filling's Section")
     public MainPage clickFillings(){
         fillings.click();
@@ -68,8 +70,6 @@ public class MainPage extends CommonHeader {
     //секция начинок
     private final SelenideElement fillingsSection = ingredientsTypes.get(2);
     private final SelenideElement fillingsH = $(byXpath("//h2[@class='text text_type_main-medium mb-6 mt-10' and contains(text(), 'Начинки')]"));
-
-
 
     //кнопка войти в аккаунт
     private final SelenideElement btnAccount = $(byXpath("//button[contains(text(),'Войти в аккаунт')]"));
