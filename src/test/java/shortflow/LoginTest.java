@@ -41,6 +41,7 @@ public class LoginTest {
     public void clean(){
         Selenide.clearBrowserCookies();
         Selenide.clearBrowserLocalStorage();
+        Selenide.webdriver().driver().close(); //нужно для закрытия яндекс браузера
         userClient.delete(token);
     }
 
